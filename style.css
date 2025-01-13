@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.form-container {
+    width: 700px;
+    height: 1198px;
+    padding: 20px;
+    background: #fff;
+    /* border: 2px solid #ccc; */
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-left: 180px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    width: 301px;
+    height: 56px;
+    font-weight: 400;
+    font-size: 46px;
+}
+
+.indicators {
+    display: flex;
+    gap: 27px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 27px;
+
+    span {
+        width: 52px;
+        height: 34px;
+        font-weight: 400;
+        font-size: 13px;
+        color: rgba(26, 26, 26, 1);
+    }
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: 400;
+    color: rgba(89, 89, 89, 1);
+    width: 39px;
+    height: 17px;
+    font-size: 15px;
+}
+
+.form-group input {
+    width: 277px;
+    height: 59px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+
+.form-group input.error {
+    border-color: #e74c3c;
+    background: #ffe6e6;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+.form-group .error-message.visible {
+    display: block;
+}
+
+.submit-btn {
+    width: 277px;
+    height: 59px;
+    padding: 10px;
+    background: rgba(84, 63, 211, 1);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    position: absolute;
+    left: 190px;
+    bottom: 10;
+}
+
+.obligatory {
+    width: 69px;
+    height: 13px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+    color: rgba(89, 89, 89, 1);
+}
+
+.submit-btn:hover {
+    background: rgba(84, 63, 211, 1);
+}
+
+#exampleForm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 30px;
+    column-gap: 71px;
+    position: relative;
+}
+
+.form-group input.valid {
+    border-color: rgba(66, 0, 255, 1);
+}
+
+.form-group input.invalid {
+    border-color: #e74c3c;
+}
+
+.txt-required.valid {
+    color: rgba(66, 0, 255, 1);
+}
+
+.txt-required.invalid {
+    color: #e74c3c;
+}
+
+.error-message.visible {
+    display: block;
+}
+
+.error-message.hidden {
+    display: none;
+}

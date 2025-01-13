@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form-container container">
+        <h2>Example Form</h2>
+
+        <div class="indicators">
+            <div class="indicator">
+                <span>All:</span>
+                <span>12</span>
+            </div>
+            <div class="indicator">
+                <span>Need:</span>
+                <span>7</span>
+            </div>
+            <div class="indicator">
+                <span>Success:</span>
+                <span id="successFields">0/7</span>
+            </div>
+            <div class="indicator">
+                <span>Error:</span>
+                <span id="errorFields">0/7</span>
+            </div>
+        </div>
+
+        <form id="exampleForm" name="form">
+            <div class="form-group">
+                <label for="name" class="txt-required">Name</label>
+                <input type="text" id="name" name="name" class="required">
+                <div class="obligatory">Need to fill</div>
+                <div class="error-message">Please enter your name.</div>
+            </div>
+            <div class="form-group">
+                <label for="age" class="txt-required">Age</label>
+                <input type="text" id="age" name="age" class="required">
+                <div class="obligatory">Need to fill</div>
+                <div class="error-message">Please enter your age.</div>
+            </div>
+            <div class="form-group">
+                <label for="surname">Surname</label>
+                <input type="text" id="surname" name="surname">
+            </div>
+            <div class="form-group">
+                <label for="about" class="txt-required">About You</label>
+                <input type="text" id="about" name="about" class="required">
+                <div class="obligatory">Need to fill</div>
+                <div class="error-message">Please fill out this field.</div>
+            </div>
+            <div class="form-group">
+                <label for="email" class="txt-required">Email Address</label>
+                <input type="email" id="email" name="email" class="required">
+                <div class="obligatory">Need to fill</div>
+                <div class="error-message">Please enter a valid email address.</div>
+            </div>
+            <div class="form-group">
+                <label for="javascript" class="txt-required">What is JavaScript?</label>
+                <input type="text" id="javascript" name="javascript" class="required">
+                <div class="obligatory">Need to fill</div>
+                <div class="error-message">Please fill out this field.</div>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="html" class="txt-required">What is HTML?</label>
+                <input type="text" id="html" name="html" class="required">
+                <div class="obligatory">Need to fill</div>
+                <div class="error-message">Please fill out this field.</div>
+            </div>
+            <div class="form-group">
+                <label for="momName">Your Mom's Name</label>
+                <input type="text" id="momName" name="momName">
+            </div>
+            <div class="form-group">
+                <label for="css" class="txt-required">What is CSS?</label>
+                <input type="text" id="css" name="css" class="required">
+                <div class="obligatory">Need to fill</div>
+                <div class="error-message">Please fill out this field.</div>
+            </div>
+            <div class="form-group">
+                <label for="dadName">Your Pap's Name</label>
+                <input type="text" id="dadName" name="dadName">
+            </div>
+            <div class="form-group">
+                <label for="car">Your favourite car</label>
+                <input type="text" id="car" name="car">
+            </div>
+            <div class="button">
+                <button type="submit" class="submit-btn">Save Changes</button>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
