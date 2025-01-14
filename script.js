@@ -43,10 +43,11 @@ function validateInpts() {
         const key = inp.name;
         const value = inp.value.trim();
 
-        let txtRequired = inp.parentElement.querySelector('.txt-required');
+        let txtRequired = document.querySelector('.txt-required');
 
-        const errorMsg = inp.parentElement.querySelector('.error-message');
-        const obligatory = inp.parentElement.querySelector('.obligatory');
+        const errorMsg = document.querySelector('.error-message');
+        const obligatory = document.querySelector('.obligatory');
+        const errorImg = document.querySelector('img'); 
 
         if (regex[key] && regex[key].test(value)) {
             inp.classList.add('valid');
@@ -58,21 +59,23 @@ function validateInpts() {
 
             if (obligatory) obligatory.style.display = 'flex';
 
+            errorImg.style.visibility = 'hidden';
             successCount++;
         } else {
             inp.classList.add('invalid');
             inp.classList.remove('valid');
-            txtRequired.classList.add('invalid');
             txtRequired.classList.remove('valid');
+            txtRequired.classList.add('invalid');
             errorMsg.classList.add('visible');
             errorMsg.classList.remove('hidden');
 
             if (obligatory) obligatory.style.display = 'none';
 
+            errorImg.style.visibility = 'visible';
             errorCount++;
             isValid = false;
         }
-    });
+    }); 
 
     successFields.innerHTML = successCount + '/7';
     errorFields.innerHTML = errorCount + '/7';

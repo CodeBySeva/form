@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+img {
+    height: 25px;
+    max-width: 30px;
+    visibility: hidden;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -16,11 +22,22 @@ body {
 }
 
 .form-container {
-    width: 700px;
+    width: 720px;
     height: 1198px;
     padding: 20px;
     background: #fff;
     /* border: 2px solid #ccc; */
+}
+
+.inpts {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.reverse {
+    flex-direction: row-reverse;
 }
 
 .form-container h2 {

@@ -34,13 +34,19 @@
         <form id="exampleForm" name="form">
             <div class="form-group">
                 <label for="name" class="txt-required">Name</label>
-                <input type="text" id="name" name="name" class="required">
+                <div class="inpts">
+                    <input type="text" id="name" name="name" class="required">
+                    <img src="./error-icon.png" alt="">
+                </div>
                 <div class="obligatory">Need to fill</div>
                 <div class="error-message">Please enter your name.</div>
             </div>
             <div class="form-group">
                 <label for="age" class="txt-required">Age</label>
-                <input type="text" id="age" name="age" class="required">
+                <div class="inpts reverse">
+                    <img src="./error-icon.png" alt="">
+                    <input type="text" id="age" name="age" class="required">
+                </div>
                 <div class="obligatory">Need to fill</div>
                 <div class="error-message">Please enter your age.</div>
             </div>
@@ -50,19 +56,28 @@
             </div>
             <div class="form-group">
                 <label for="about" class="txt-required">About You</label>
-                <input type="text" id="about" name="about" class="required">
+                <div class="inpts reverse">
+                    <img src="./error-icon.png" alt="">
+                    <input type="text" id="about" name="about" class="required">
+                </div>
                 <div class="obligatory">Need to fill</div>
                 <div class="error-message">Please fill out this field.</div>
             </div>
             <div class="form-group">
                 <label for="email" class="txt-required">Email Address</label>
-                <input type="email" id="email" name="email" class="required">
+                <div class="inpts reverse">
+                    <img src="./error-icon.png" alt="">
+                    <input type="email" id="email" name="email" class="required">
+                </div>
                 <div class="obligatory">Need to fill</div>
                 <div class="error-message">Please enter a valid email address.</div>
             </div>
             <div class="form-group">
                 <label for="javascript" class="txt-required">What is JavaScript?</label>
-                <input type="text" id="javascript" name="javascript" class="required">
+                <div class="inpts reverse">
+                    <img src="./error-icon.png" alt="">
+                    <input type="text" id="javascript" name="javascript" class="required">
+                </div>
                 <div class="obligatory">Need to fill</div>
                 <div class="error-message">Please fill out this field.</div>
             </div>
@@ -72,7 +87,10 @@
             </div>
             <div class="form-group">
                 <label for="html" class="txt-required">What is HTML?</label>
-                <input type="text" id="html" name="html" class="required">
+                <div class="inpts reverse">
+                    <img src="./error-icon.png" alt="">
+                    <input type="text" id="html" name="html" class="required">
+                </div>
                 <div class="obligatory">Need to fill</div>
                 <div class="error-message">Please fill out this field.</div>
             </div>
@@ -82,7 +100,10 @@
             </div>
             <div class="form-group">
                 <label for="css" class="txt-required">What is CSS?</label>
-                <input type="text" id="css" name="css" class="required">
+                <div class="inpts reverse">
+                    <img src="./error-icon.png" alt="">
+                    <input type="text" id="css" name="css" class="required">
+                </div>
                 <div class="obligatory">Need to fill</div>
                 <div class="error-message">Please fill out this field.</div>
             </div>
@@ -94,6 +115,7 @@
                 <label for="car">Your favourite car</label>
                 <input type="text" id="car" name="car">
             </div>
+            
             <div class="button">
                 <button type="submit" class="submit-btn">Save Changes</button>
             </div>
