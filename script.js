@@ -43,11 +43,11 @@ function validateInpts() {
         const key = inp.name;
         const value = inp.value.trim();
 
-        let txtRequired = document.querySelector('.txt-required');
+        let txtRequired = inp.parentElement.parentElement.querySelector('.txt-required');
 
-        const errorMsg = document.querySelector('.error-message');
-        const obligatory = document.querySelector('.obligatory');
-        const errorImg = document.querySelector('img'); 
+        const errorMsg = inp.parentElement.parentElement.querySelector('.error-message');
+        const obligatory = inp.parentElement.parentElement.querySelector('.obligatory');
+        const errorImg = inp.parentElement.parentElement.querySelector('img'); 
 
         if (regex[key] && regex[key].test(value)) {
             inp.classList.add('valid');
